@@ -1,0 +1,56 @@
+.body {
+    display: grid;
+    grid-template-columns: 1fr 543px;
+    gap: 68px;
+    margin: 70px 0;
+}
+
+.text {
+    margin: auto 0;
+}
+
+.text h2 {
+    display: none;
+}
+
+.text p {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    color: #6d7ba4;
+}
+
+.text p:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.image {
+    width: 543px;
+}
+
+.image img {
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .body {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0;
+        margin: 0;
+    }
+    .text {
+        padding: 30px 20px;
+        margin: 0;
+    }
+    .image {
+        width: 100%;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+    }
+}

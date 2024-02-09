@@ -1,0 +1,1 @@
+export { ListSomeSquadCard } from "./ListSomeSquadCard";

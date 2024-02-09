@@ -1,0 +1,58 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    row-gap: 20px;
+}
+
+.title {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 130%;
+    text-align: center;
+    color: #2b3a65;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    &_open {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 135%;
+        /* or 24px */
+
+        text-decoration-line: underline;
+
+        color: #ffffff;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .title {
+        font-size: 36px;
+    }
+}

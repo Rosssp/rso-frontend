@@ -1,0 +1,30 @@
+.bg {
+    &__white {
+        background: white;
+        padding-top: 70px;
+        padding-bottom: 100px;
+    }
+}
+
+.video {
+    width: 100%;
+    margin: 0px auto;
+    max-width: 1010px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & iframe {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        border: 1px solid #84a5ff;
+        border-radius: 8px;
+    }
+    @media (max-width: 1024px) {
+        padding: 16px;
+        & iframe {
+            width: calc(100vw - 32px);
+            height: 50vw;
+        }
+    }
+}

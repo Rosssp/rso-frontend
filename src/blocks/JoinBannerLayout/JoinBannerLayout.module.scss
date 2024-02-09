@@ -1,0 +1,158 @@
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background: #5477d8;
+  padding: 80px 110px;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 20px;
+  align-items: end;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &_sub {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    column-gap: 20px;
+  }
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &_mobile {
+    display: none;
+  }
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  top: 54px;
+  left: 0;
+  z-index: 1;
+  padding: 48px;
+}
+
+.title {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 54.6154px;
+  line-height: 130%;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.right_img {
+  margin-bottom: 70px;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    padding: 50px 16px;
+  }
+
+  .bg {
+    padding: 50px 16px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .mobile_img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .control {
+    display: none;
+
+    &_mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      gap: 30px;
+    }
+  }
+
+  .col {
+    &:nth-child(1) {
+      order: 2;
+      margin-bottom: 10px;
+    }
+    &:nth-child(2) {
+      order: 1;
+      margin-bottom: 10px;
+    }
+    &:nth-child(3) {
+      order: 3;
+      margin-bottom: 10px;
+    }
+
+    &_sub {
+      width: 100%;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  .bg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wrapper {
+    padding: 50px 8px;
+  }
+
+  .control {
+    display: none;
+
+    &_mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      gap: 30px;
+    }
+  }
+}

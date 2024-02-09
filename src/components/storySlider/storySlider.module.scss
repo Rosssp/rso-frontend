@@ -1,0 +1,162 @@
+.container {
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin: 0 auto;
+    font-family: "Roboto";
+    height: 100%;
+    & .side {
+        &__first {
+            width: 284px;
+            position: relative;
+            border-radius: 8px;
+            background-color: #ffe07c;
+            overflow: hidden;
+            & img {
+                object-fit: cover;
+                height: 95%;
+            }
+        }
+        &__second {
+            width: 60%;
+            padding-top: 30px;
+            padding-left: 40px;
+            &_title {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 20px;
+
+                &_name {
+                    :nth-child(1) {
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 135%;
+                        color: #2b3a65;
+                        margin-bottom: 5px;
+                    }
+                    :nth-child(2) {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 135%;
+                        color: #6d7ba4;
+                    }
+                }
+                &_rating {
+                    display: flex;
+                    align-items: flex-start;
+                    & ul {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 4.3px;
+                        margin: 0;
+                        & li {
+                            max-width: 20px;
+                            max-height: 18px;
+                            min-width: 20px;
+                            min-height: 18px;
+                        }
+                    }
+                }
+            }
+            &_text {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 135%;
+                color: #6d7ba4;
+
+                height: 324px;
+
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 15;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                * sup {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        overflow: hidden;
+        height: 100%;
+        width: 281px;
+        & .side {
+            &__first {
+                width: 100%;
+                min-height: 200px;
+                max-height: 200px;
+                border-radius: 0;
+                background-color: transparent;
+                & img {
+                    object-position: top;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &__second {
+                width: 100%;
+                padding: 10px;
+                &_title {
+                    margin-bottom: 10px;
+
+                    &_name {
+                        :nth-child(1) {
+                        }
+                        :nth-child(2) {
+                        }
+                    }
+                    &_rating {
+                        display: none;
+                    }
+                }
+                &_text {
+                    height: 154px;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 7;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+
+.mobTextShow {
+    & .side {
+        &__first {
+            & img {
+            }
+        }
+        &__second {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            &_title {
+                &_name {
+                    :nth-child(1) {
+                    }
+                    :nth-child(2) {
+                    }
+                }
+                &_rating {
+                }
+            }
+            &_text {
+                height: 216px;
+                display: inline-block !important;
+                -webkit-box-orient: vertical !important;
+                -webkit-line-clamp: 0 !important;
+                overflow: auto !important;
+            }
+        }
+    }
+}

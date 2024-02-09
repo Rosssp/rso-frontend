@@ -1,0 +1,277 @@
+.default {
+    background: linear-gradient(180deg, #ffcc25 -17.59%, #ffcc25 94.44%);
+    border: 1px solid #efbc15;
+    border-radius: 8px;
+    color: white;
+    transition: all 0.2s ease-in;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    padding: 15px 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background: linear-gradient(180deg, #ffe925 -17.59%, #ffe07c 94.44%);
+        border: 1px solid #efbc15;
+    }
+
+    &:active {
+        background: linear-gradient(182.01deg, #ffcb7c 1.68%, #ffcb7c 92.94%);
+        border: 1px solid #fff72b;
+    }
+}
+
+.blue {
+    background: #5477d8;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: white;
+    transition: all 0.2s ease-in;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    padding: 15px 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &:active {
+        scale: 0.9;
+    }
+}
+
+.outline_blueMain {
+    background: transparent;
+    border: 1px solid #5477d8;
+    border-radius: 8px;
+    color: #5477d8;
+    transition: all 0.2s ease-in;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    padding: 15px 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &:hover {
+        opacity: 0.9;
+        border: 1px solid #5b75be;
+    }
+
+    &:active {
+        scale: 0.9;
+    }
+}
+
+.outline_white {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+    transition: all 0.2s ease-in;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    padding: 15px 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &:hover {
+        opacity: 0.9;
+        background: rgba($color: #ffffff, $alpha: 0.2);
+        border: 1px solid white;
+    }
+
+    &:active {
+        scale: 0.9;
+    }
+}
+
+.white {
+    background: white;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: #5477d8;
+    transition: all 0.2s ease-in;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    padding: 15px 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &:active {
+        scale: 0.9;
+    }
+}
+
+.ptfButtonWhite {
+    background: white;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: #5477d8;
+    transition: all 0.2s ease-in;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    // padding: 15px 35px;
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column-reverse;
+    & span {
+        margin: 0 auto;
+    }
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &:active {
+        scale: 0.9;
+    }
+}
+
+.ptfDefWhite {
+    background: #ffcc25;
+    border: 1px solid #efbc15;
+    border-radius: 8px;
+    color: white;
+    transition: all 0.2s ease-in;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    width: 130px;
+    height: 130px;
+    // padding: 15px 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column-reverse;
+    & span {
+        margin: 0 auto;
+    }
+
+    &:hover {
+        background: linear-gradient(180deg, #ffe925 -17.59%, #ffe07c 94.44%);
+        border: 1px solid #efbc15;
+    }
+
+    &:active {
+        background: linear-gradient(182.01deg, #ffcb7c 1.68%, #ffcb7c 92.94%);
+        border: 1px solid #fff72b;
+    }
+}
+
+.outline_blue {
+    background: transparent;
+    border: 1px dashed #5477d884;
+    border-radius: 8px;
+    color: #2b3a65;
+    transition: all 0.2s ease-in;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    padding: 15px 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &:active {
+        scale: 0.9;
+    }
+}
+
+.whiteDoc {
+    background: white;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: #2b3a65;
+    transition: all 0.2s ease-in;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    padding: 15px 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &:active {
+        scale: 0.9;
+    }
+}
+
+.outline_blueFaq {
+    background: transparent;
+    border: 1px solid #5477d8;
+    border-radius: 8px;
+    color: #5477d8;
+    transition: all 0.2s ease-in;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    padding: 15px 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &:active {
+        scale: 0.9;
+    }
+}

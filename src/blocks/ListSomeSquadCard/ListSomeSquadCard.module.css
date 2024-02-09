@@ -1,0 +1,16 @@
+.button {
+    background: linear-gradient(180deg, #ffcc25 -17.59%, #ffcc25 94.44%);
+    border: 1px solid #efbc15;
+    border-radius: 8px;
+    color: white;
+    transition: all 0.2s ease-in;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    padding: 15px 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

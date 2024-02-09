@@ -1,0 +1,13 @@
+.title {
+    width: 650px;
+    margin: 0 auto;
+    & span {
+        color: #5477d8;
+    }
+    @media (max-width: 640px) {
+        width: 90%;
+    }
+    @media (max-width: 480px) {
+        font-size: 36px !important;
+    }
+}

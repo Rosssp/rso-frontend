@@ -1,0 +1,56 @@
+.xs {
+    height: 20px;
+    user-select: none;
+}
+
+.sm {
+    height: 30px;
+    user-select: none;
+}
+
+.md {
+    height: 40px;
+    user-select: none;
+}
+
+.lg {
+    height: 70px;
+    user-select: none;
+}
+
+.xl {
+    height: 100px;
+    user-select: none;
+}
+
+.xxl {
+    height: 170px;
+    user-select: none;
+}
+
+@media screen and (max-width: 900px) {
+    .xs {
+        height: 15px;
+        user-select: none;
+    }
+
+    .sm {
+        height: 20px;
+        user-select: none;
+    }
+
+    .md {
+        height: 30px;
+        user-select: none;
+    }
+
+    .lg {
+        height: 40px;
+        user-select: none;
+    }
+
+    .xl {
+        height: 50px;
+        user-select: none;
+    }
+}

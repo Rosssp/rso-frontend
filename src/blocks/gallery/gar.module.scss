@@ -1,0 +1,188 @@
+.gar {
+    &__container {
+        background-color: white;
+        overflow-y: auto;
+        padding: 70px 0 0px;
+    }
+    &_img__wrapper {
+        height: 584px;
+        overflow-y: auto;
+        margin: 0 auto;
+        position: relative;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        gap: 20px;
+        grid-template-areas:
+            "first second second"
+            "first third four";
+        & * {
+            // object-fit: cover;
+            border-radius: 8px;
+            opacity: 1 !important;
+            // height: max-content;
+        }
+        @media (max-width: 1024px) {
+            margin: 70px 24px 0px;
+        }
+        @media (max-width: 768px) {
+            height: 304px;
+            width: 640px;
+            margin: 0px 24px 0px;
+        }
+        @media (max-width: 480px) {
+        }
+
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    &__item_1 {
+        grid-area: first;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        // width: 432px;
+        // height: 584px;
+        & * {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__item_2 {
+        grid-area: second;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        & * {
+            position: absolute;
+
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        // width: 656px;
+        // height: 256px;
+    }
+    &__item_3 {
+        grid-area: third;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        & * {
+            position: absolute;
+
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        // width: 314px;
+        // height: 309px;
+    }
+    &__item_4 {
+        grid-area: four;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        & * {
+            position: absolute;
+
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        // width: 314px;
+        // height: 309px;
+    }
+    &__button__wrapper {
+        background-color: white;
+    }
+    &__button {
+        padding: 40px 0px 110px;
+        width: 1088px;
+        margin: 0 auto;
+        @media (max-width: 1024px) {
+            padding: 40px 24px 70px;
+        }
+
+        @media (max-width: 320px) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 0;
+        }
+    }
+}
+
+.transparent {
+    background-color: transparent;
+    overflow-y: scroll;
+    padding: 70px 0 0px;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.white {
+    background-color: white;
+    overflow-y: scroll;
+    padding: 70px 0 0px;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.white__life {
+    // background-color: white;
+    padding: 0px 0 0px !important;
+    @media (max-width: 768px) {
+    }
+}
+
+.arrowLeft {
+    transform: translateX(16vw);
+    @media (max-width: 1144px) {
+        transform: translateX(4%);
+    }
+    @media (max-width: 768px) {
+        cursor: default !important;
+    }
+}
+.arrowRight {
+    transform: translateX(-16vw);
+
+    @media (max-width: 1144px) {
+        transform: translateX(-4%);
+    }
+    @media (max-width: 768px) {
+        cursor: default !important;
+    }
+}
+
+.close {
+    position: absolute;
+    transform: translateX(-50vw) translateY(12vh);
+
+    @media (max-width: 1144px) {
+        // transform: translateX(-45vw) translateY(12vw);
+    }
+    @media (max-width: 768px) {
+        cursor: default !important;
+    }
+}

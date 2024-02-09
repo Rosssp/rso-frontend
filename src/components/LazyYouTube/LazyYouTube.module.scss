@@ -1,0 +1,15 @@
+.wrapper {
+  overflow: hidden;
+  padding-top: 40%;
+  position: relative;
+  width: 100%;
+  border: 1px solid #84A5FF;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    // margin: 0 20px;
+    padding-top: 100%;
+  }
+}

@@ -1,0 +1,106 @@
+.default {
+    background: #ffcc25;
+    border: 1px solid #efbc15;
+    border-radius: 8px;
+    color: white;
+    transition: all 0.2s ease-in;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    padding: 15px 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        background: linear-gradient(180deg, #ffe925 -17.59%, #ffe07c 94.44%);
+        border: 1px solid #efbc15;
+    }
+
+    &:active {
+        background: linear-gradient(182.01deg, #ffcb7c 1.68%, #ffcb7c 92.94%);
+        border: 1px solid #fff72b;
+    }
+}
+
+.blue {
+    background: #5477d8;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: white;
+    transition: all 0.2s ease-in;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    padding: 15px 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &:active {
+        scale: 0.9;
+    }
+}
+
+.outline_blue {
+    background: transparent;
+    border: 1px solid #5477d8;
+    border-radius: 8px;
+    color: #5477d8;
+    transition: all 0.2s ease-in;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    padding: 15px 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        opacity: 0.9;
+        border: 1px solid #5b75be;
+    }
+
+    &:active {
+        scale: 0.9;
+    }
+}
+
+.white {
+    background: white;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: #5477d8;
+    transition: all 0.2s ease-in;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    padding: 15px 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &:active {
+        scale: 0.9;
+    }
+}
+
+.text {
+    margin-right: 8px;
+}

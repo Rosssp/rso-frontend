@@ -1,0 +1,38 @@
+{
+  "name": "yarn",
+  "version": "1.0.0",
+  "description": "website for rso organization",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [
+    "next",
+    "js",
+    "students",
+    "oleg",
+    "alexey"
+  ],
+  "author": "Oleg Alexey Alexey Oleg",
+  "license": "ISC",
+  "dependencies": {
+    "@react-hook/intersection-observer": "^3.1.1",
+    "@reduxjs/toolkit": "^1.8.6",
+    "axios": "^1.1.3",
+    "formik": "^2.2.9",
+    "next": "^13.0.0",
+    "react": "^18.2.0",
+    "react-content-loader": "^6.2.0",
+    "react-dom": "^18.2.0",
+    "react-modal": "^3.16.1",
+    "react-select": "^5.6.1",
+    "react-simple-image-viewer": "^1.2.2",
+    "react-transition-group": "^4.4.5",
+    "sass": "^1.55.0",
+    "swiper": "^8.4.4",
+    "yup": "^0.32.11"
+  }
+}

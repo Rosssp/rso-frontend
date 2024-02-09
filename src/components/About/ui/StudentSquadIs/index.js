@@ -1,0 +1,1 @@
+export { StudentSquadIs } from "./StudentSquadIs";

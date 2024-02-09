@@ -1,0 +1,253 @@
+.formik {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+
+  &__info {
+    margin: 0 auto;
+    width: 223px;
+    margin-bottom: 30px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    text-align: center;
+    color: #2b3a65;
+
+    @media screen and (max-width: 900px) {
+      // width: 100%;
+      margin-bottom: 16px;
+
+    }
+  }
+
+  &_container {
+    width: 100%;
+    background: #ffffff;
+    // padding: 4rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &_wrapper {
+    max-width: 300px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+  }
+
+  &_error {
+    color: #d3aa22;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+  }
+
+  &__button {
+    margin-top: 30px;
+  }
+
+  &__input {
+    width: 100%;
+    background: #f5f8ff;
+    border: 1px solid #eef1f9;
+    border-radius: 8px;
+    min-height: 60px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    /* identical to box height, or 22px */
+
+    /* Text */
+
+    color: #2b3a65;
+    padding-left: 20px;
+
+    &::-webkit-input-placeholder {
+      /* WebKit, Blink, Edge */
+      color: #6d7ba4;
+    }
+    :-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: #6d7ba4;
+      opacity: 1;
+    }
+    &::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: #6d7ba4;
+      opacity: 1;
+    }
+    :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #6d7ba4;
+    }
+    &::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #6d7ba4;
+    }
+    &::placeholder {
+      /* Most modern browsers support this now. */
+      color: #6d7ba4;
+    }
+  }
+
+  &__input_req {
+    width: 100%;
+    background: #f5f8ff;
+    border: 1px solid #eef1f9;
+    border-radius: 8px;
+    min-height: 60px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    color: #2b3a65;
+    padding-left: 20px;
+
+    &::-webkit-input-placeholder {
+      /* WebKit, Blink, Edge */
+      color: #6d7ba4;
+    }
+    :-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: #6d7ba4;
+
+      opacity: 1;
+    }
+    &::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: #6d7ba4;
+
+      opacity: 1;
+    }
+    :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #6d7ba4;
+    }
+    &::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #6d7ba4;
+    }
+    &::placeholder {
+      /* Most modern browsers support this now. */
+      color: #6d7ba4;
+    }
+  }
+
+  &__select {
+    width: 100%;
+    background: #f3f6ff;
+    border: 1px solid #e5ecf3;
+    border-radius: 8px;
+    min-height: 60px;
+
+    &s {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  }
+
+  &__button {
+    background: linear-gradient(180deg, #ffcc25 -17.59%, #ffcc25 94.44%);
+    border: 1px solid #efbc15;
+    border-radius: 8px;
+    color: white;
+    transition: all 0.2s ease-in;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    padding: 15px 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background: linear-gradient(180deg, #ffe925 -17.59%, #ffe07c 94.44%);
+      border: 1px solid #efbc15;
+    }
+
+    &:active {
+      background: linear-gradient(182.01deg, #ffcb7c 1.68%, #ffcb7c 92.94%);
+      border: 1px solid #fff72b;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .WantJoinBlock {
+    width: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 0;
+
+    &_wrapper {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    &_title {
+      font-family: "Bebas Neue";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 110%;
+      text-align: center;
+      padding: 0 20px;
+      color: #2b3a65;
+    }
+
+    &_description {
+      padding: 0 20px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 135%;
+      text-align: center;
+      color: #6d7ba4;
+
+      & p + p {
+        margin-top: 10px;
+      }
+    }
+
+    &_form {
+      padding: 2rem 32px;
+    }
+
+    &_question {
+      display: none;
+    }
+  }
+
+  .formik {
+    &__button {
+      margin-top: 40px;
+    }
+
+    &_container {
+      padding: 1rem;
+      padding-top: 0;
+    }
+  }
+}

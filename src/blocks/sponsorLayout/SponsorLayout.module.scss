@@ -1,0 +1,92 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.list {
+    width: 100%;
+    max-width: 908px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.title {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 130%;
+    text-align: center;
+    color: #2b3a65;
+}
+
+.description {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    text-align: center;
+    color: #717171;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    .list {
+        width: 100%;
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .buttons {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .wrapper {
+        position: relative;
+    }
+    .list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        overflow-x: auto;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .control {
+        display: none;
+
+        &_mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            gap: 30px;
+        }
+    }
+
+    .buttons {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+}

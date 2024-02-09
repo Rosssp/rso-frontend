@@ -1,0 +1,43 @@
+.vac {
+    &__container {
+        transition: 2s all !important;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px;
+        @media (max-width: 360px) {
+            margin: 0 14px;
+        }
+    }
+}
+
+.button {
+    margin-top: 40px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    cursor: pointer;
+
+    text-decoration-line: underline;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    cursor: pointer;
+    text-align: center;
+    text-decoration-line: underline;
+
+    color: #0672a8;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        color: #066c9e;
+    }
+}
